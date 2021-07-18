@@ -8,9 +8,11 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
+    "@types/lodash-es": "^4.17.4",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "lodash-es": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
@@ -62,6 +64,7 @@
       "@typescript-eslint"
     ],
     "rules": {
+      "comma-dangle": "off",
       "no-shadow": "off",
       "no-use-before-define": "off",
       "import/extensions": [
@@ -84,13 +87,35 @@
         }
       ],
       "react/prop-types": "off",
+      "react/require-default-props": "off",
+      "semi": "off",
+      "@typescript-eslint/comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
       "@typescript-eslint/explicit-function-return-type": [
         "error",
         {
           "allowExpressions": true
         }
       ],
+      "@typescript-eslint/member-delimiter-style": [
+        "error",
+        {
+          "multiline": {
+            "delimiter": "semi",
+            "requireLast": true
+          },
+          "singleline": {
+            "delimiter": "semi",
+            "requireLast": false
+          }
+        }
+      ],
       "@typescript-eslint/no-shadow": [
+        "error"
+      ],
+      "@typescript-eslint/semi": [
         "error"
       ]
     },
