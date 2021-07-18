@@ -23,7 +23,8 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "lint": "eslint --fix src/**/*.{ts,tsx}"
+    "lint": "eslint --fix src/**/*.{ts,tsx}",
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -97,11 +98,6 @@
       "import/resolver": {
         "typescript": {}
       }
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
