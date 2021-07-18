@@ -101,7 +101,7 @@
     }
   },
   "lint-staged": {
-    "**/*.{ts,tsx}": "lint"
+    "**/*.{ts,tsx}": "yarn lint"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.3",
