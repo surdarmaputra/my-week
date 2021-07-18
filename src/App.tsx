@@ -22,7 +22,7 @@ function App(): JSX.Element {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React now
+          Learn React
         </a>
       </header>
     </div>
