@@ -54,7 +54,7 @@ const transparentButtonClassNames: ButtonClassNames = {
   },
 };
 
-function Button({
+export default function Button({
   children = null,
   onClick = identity,
   transparent = false,
@@ -80,5 +80,3 @@ function Button({
     </button>
   );
 }
-
-export default Button;
