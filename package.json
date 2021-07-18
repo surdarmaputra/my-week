@@ -24,7 +24,7 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint --fix src/**/*.{ts,tsx}",
-    "prepare": "husky install"
+    "postinstall": "husky install"
   },
   "browserslist": {
     "production": [
