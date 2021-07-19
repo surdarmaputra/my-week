@@ -7,6 +7,7 @@ interface Option {
 }
 
 interface Props {
+  className?: string;
   onChange?: ChangeEventHandler;
   options?: Option[];
   placeholder?: string;
@@ -14,13 +15,14 @@ interface Props {
 }
 
 export default function Select({
+  className = '',
   onChange = identity,
   options = [],
   placeholder = 'Select',
   value: selectedOption = undefined,
 }: Props): JSX.Element {
   return (
-    <div className="inline-block relative text-gray-700 w-full">
+    <div className={`inline-block relative text-gray-700 w-full ${className}`}>
       <select
         className="
         bg-white text-lg appearance-none w-full px-4 py-3 rounded-md outline-none transition
