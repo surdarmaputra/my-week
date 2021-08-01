@@ -7,7 +7,7 @@ interface Props {
 
 export default function Heading({ children, className = '' }: Props): ReactElement {
   return (
-    <h1 className={`text-5xl mb-5 ${className}`}>
+    <h1 className={`text-5xl font-bold mb-12 ${className}`}>
       {children}
     </h1>
   );

@@ -16,7 +16,7 @@ export default function Card({
   return (
     <div className={`
       p-6 rounded-lg border border-gray-100 shadow-lg
-      transition transform hover:shadow-xl
+      bg-white transition transform hover:shadow-xl
       ${className}
     `}
     >

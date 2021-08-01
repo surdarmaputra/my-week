@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Plan 1",
+    "updatedAt": "2021-08-01T12:25:27.050Z"
+  },
+  {
+    "id": 2,
+    "title": "Plan 2",
+    "updatedAt": "2021-08-01T12:25:27.050Z"
+  },
+  {
+    "id": 3,
+    "title": "Plan 3",
+    "updatedAt": "2021-08-01T12:25:27.050Z"
+  },
+  {
+    "id": 4,
+    "title": "Plan 4",
+    "updatedAt": "2021-08-01T12:25:27.050Z"
+  },
+  {
+    "id": 5,
+    "title": "Plan 5",
+    "updatedAt": "2021-08-01T12:25:27.050Z"
+  }
+]
