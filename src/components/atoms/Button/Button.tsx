@@ -1,4 +1,4 @@
-import React, { MouseEventHandler } from 'react';
+import React, { MouseEventHandler, ReactElement } from 'react';
 import identity from 'lodash-es/identity';
 
 export enum ButtonVariations {
@@ -64,7 +64,7 @@ export default function Button({
   transparent = false,
   type = ButtonTypes.button,
   variation = ButtonVariations.primary,
-}: Props): JSX.Element {
+}: Props): ReactElement {
   const { background, text } = transparent
     ? transparentButtonClassNames[variation]
     : solidButtonClassNames[variation];

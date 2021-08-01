@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler } from 'react';
+import React, { ChangeEventHandler, ReactElement } from 'react';
 import identity from 'lodash-es/identity';
 
 interface Option {
@@ -20,7 +20,7 @@ export default function Select({
   options = [],
   placeholder = 'Select',
   value: selectedOption = undefined,
-}: Props): JSX.Element {
+}: Props): ReactElement {
   return (
     <div className={`inline-block relative text-gray-700 w-full ${className}`}>
       <select

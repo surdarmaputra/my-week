@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import Button, { ButtonVariations } from 'components/atoms/Button';
 import Heading from 'components/atoms/Heading';
 import Input, { InputSizes } from 'components/atoms/Input';
@@ -9,7 +9,7 @@ import TemplateCard from 'components/molecules/TemplateCard';
 import logo from './logo.svg';
 import './App.css';
 
-function App(): JSX.Element {
+function App(): ReactElement {
   return (
     <div className="App">
       <Heading>Template</Heading>

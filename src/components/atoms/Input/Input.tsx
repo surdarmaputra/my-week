@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler } from 'react';
+import React, { ChangeEventHandler, ReactElement } from 'react';
 import identity from 'lodash-es/identity';
 
 export enum InputSizes {
@@ -22,7 +22,7 @@ export default function Input({
   size = InputSizes.normal,
   type = 'text',
   value = '',
-}: Props): JSX.Element {
+}: Props): ReactElement {
   const finalClassName = `
     w-full px-4 py-3 rounded-md outline-none transition
     border border-gray-300 focus:ring-1 focus:ring-blue-400

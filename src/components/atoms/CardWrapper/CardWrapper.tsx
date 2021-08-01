@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 interface Props {
   children?: React.ReactNode;
@@ -12,7 +12,7 @@ export default function Card({
   className = '',
   actions = null,
   actionWrapperClassName = 'mt-6',
-}: Props): JSX.Element {
+}: Props): ReactElement {
   return (
     <div className={`
       p-6 rounded-lg border border-gray-100 shadow-lg
