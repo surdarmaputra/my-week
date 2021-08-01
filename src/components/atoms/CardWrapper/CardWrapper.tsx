@@ -4,12 +4,14 @@ interface Props {
   children?: React.ReactNode;
   className?: string;
   actions?: React.ReactNode;
+  actionWrapperClassName?: string;
 }
 
 export default function Card({
   children = null,
   className = '',
   actions = null,
+  actionWrapperClassName = 'mt-6',
 }: Props): JSX.Element {
   return (
     <div className={`
@@ -20,7 +22,7 @@ export default function Card({
     >
       {children}
       {actions && (
-        <div className="mt-6">
+        <div className={actionWrapperClassName}>
           {actions}
         </div>
       )}
